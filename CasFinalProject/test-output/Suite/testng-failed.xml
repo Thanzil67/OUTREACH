@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.outreach.Utilities.Extent_Reports"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.outreach.testcases.NavigateToOutReach">
+        <methods>
+          <include name="navigate_outreach" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.NavigateToOutReach -->
+      <class name="com.outreach.testcases.SelectMyVolunteering">
+        <methods>
+          <include name="click_vol"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.SelectMyVolunteering -->
+      <class name="com.outreach.testcases.SearchFilterValidation">
+        <methods>
+          <include name="validate"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.SearchFilterValidation -->
+      <class name="com.outreach.testcases.MenusAndSubmenus">
+        <methods>
+          <include name="setup"/>
+          <include name="print_submenu"/>
+          <include name="print_menu"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.MenusAndSubmenus -->
+      <class name="com.outreach.testcases.GetVolunteerCards">
+        <methods>
+          <include name="setup"/>
+          <include name="fetch_cards"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.GetVolunteerCards -->
+      <class name="com.outreach.testcases.IntrestEvents">
+        <methods>
+          <include name="print_interest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.IntrestEvents -->
+      <class name="com.outreach.testcases.RandomLocation">
+        <methods>
+          <include name="validate"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.outreach.testcases.RandomLocation -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
